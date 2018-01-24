@@ -1,0 +1,212 @@
+EESchema Schematic File Version 2
+LIBS:tact_sw_no
+LIBS:lm35dz
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:l293d
+LIBS:project-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "ETD Final Project"
+Date "2017-11-17"
+Rev "0.9"
+Comp "Seneca College"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6300 4225 2    60   Output ~ 0
+STOP
+Text HLabel 6300 5050 2    60   Output ~ 0
+RESET
+Text HLabel 6300 3325 2    60   Output ~ 0
+TEMPERATURE
+$Comp
+L LM35DZ U1
+U 1 1 5A0FC133
+P 5200 2725
+F 0 "U1" H 5200 2725 60  0000 C CNN
+F 1 "LM35DZ" H 5200 2825 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 5200 2725 60  0001 C CNN
+F 3 "" H 5200 2725 60  0001 C CNN
+	1    5200 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR01
+U 1 1 5A0FC1F8
+P 5200 3225
+F 0 "#PWR01" H 5200 2975 50  0001 C CNN
+F 1 "GNDREF" H 5200 3075 50  0000 C CNN
+F 2 "" H 5200 3225 50  0001 C CNN
+F 3 "" H 5200 3225 50  0001 C CNN
+	1    5200 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5A0FC20E
+P 4625 2675
+F 0 "#PWR02" H 4625 2525 50  0001 C CNN
+F 1 "+5V" H 4625 2815 50  0000 C CNN
+F 2 "" H 4625 2675 50  0001 C CNN
+F 3 "" H 4625 2675 50  0001 C CNN
+	1    4625 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 3325 6300 3325
+Wire Wire Line
+	5875 2725 5700 2725
+Wire Wire Line
+	5200 3225 5200 3175
+Wire Wire Line
+	4625 2675 4625 2725
+Wire Wire Line
+	4625 2725 4700 2725
+$Comp
+L Tact_SW_NO SW1
+U 1 1 5A0FC447
+P 5525 4125
+F 0 "SW1" H 5525 3925 60  0000 C CNN
+F 1 "Tact_SW_NO" H 5525 4375 60  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 5525 4125 60  0001 C CNN
+F 3 "" H 5525 4125 60  0001 C CNN
+	1    5525 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Tact_SW_NO SW2
+U 1 1 5A0FC49E
+P 5525 4950
+F 0 "SW2" H 5525 4750 60  0000 C CNN
+F 1 "Tact_SW_NO" H 5525 5200 60  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 5525 4950 60  0001 C CNN
+F 3 "" H 5525 4950 60  0001 C CNN
+	1    5525 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5050 5825 5050
+Wire Wire Line
+	6300 4225 5825 4225
+Wire Wire Line
+	5225 4225 5100 4225
+Wire Wire Line
+	5225 5050 5100 5050
+$Comp
+L R R1
+U 1 1 5A0FC57A
+P 5950 4000
+F 0 "R1" V 6030 4000 50  0000 C CNN
+F 1 "10k" V 5950 4000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5880 4000 50  0001 C CNN
+F 3 "" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A0FC5AF
+P 5950 4825
+F 0 "R2" V 6030 4825 50  0000 C CNN
+F 1 "10k" V 5950 4825 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5880 4825 50  0001 C CNN
+F 3 "" H 5950 4825 50  0001 C CNN
+	1    5950 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR03
+U 1 1 5A0FC63F
+P 5100 5150
+F 0 "#PWR03" H 5100 4900 50  0001 C CNN
+F 1 "GNDREF" H 5100 5000 50  0000 C CNN
+F 2 "" H 5100 5150 50  0001 C CNN
+F 3 "" H 5100 5150 50  0001 C CNN
+	1    5100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR04
+U 1 1 5A0FC665
+P 5100 4325
+F 0 "#PWR04" H 5100 4075 50  0001 C CNN
+F 1 "GNDREF" H 5100 4175 50  0000 C CNN
+F 2 "" H 5100 4325 50  0001 C CNN
+F 3 "" H 5100 4325 50  0001 C CNN
+	1    5100 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5050 5100 5150
+Wire Wire Line
+	5100 4225 5100 4325
+$Comp
+L +5V #PWR05
+U 1 1 5A0FC87A
+P 5950 3775
+F 0 "#PWR05" H 5950 3625 50  0001 C CNN
+F 1 "+5V" H 5950 3915 50  0000 C CNN
+F 2 "" H 5950 3775 50  0001 C CNN
+F 3 "" H 5950 3775 50  0001 C CNN
+	1    5950 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR06
+U 1 1 5A0FC8A2
+P 5950 4600
+F 0 "#PWR06" H 5950 4450 50  0001 C CNN
+F 1 "+5V" H 5950 4740 50  0000 C CNN
+F 2 "" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4150 5950 4225
+Connection ~ 5950 4225
+Wire Wire Line
+	5950 3775 5950 3850
+Wire Wire Line
+	5950 4975 5950 5050
+Connection ~ 5950 5050
+Wire Wire Line
+	5950 4600 5950 4675
+Connection ~ 5875 2725
+Wire Wire Line
+	5875 3325 5875 2725
+$EndSCHEMATC
